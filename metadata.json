@@ -1,0 +1,5 @@
+{
+  "name": "Prisma Link",
+  "description": "PWA de Chat à Personas IA propulsée par l'API Gemini. Transforme chaque message en une expérience de dialogue incarnée avec des matrices stylistiques.",
+  "requestFramePermissions": []
+}

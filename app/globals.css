@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent-obsidian: #38BDF8;
+  --color-accent-aurora:   #4ADE80;
+  --color-accent-prism:    #C084FC;
+  --color-accent-dusk:     #FB7185;
+
+  --color-matrix-a: #38BDF8;
+  --color-matrix-b: #C084FC;
+  --color-matrix-c: #FB7185;
+
+  --font-family-display: "Cormorant Garamond", serif;
+  --font-family-ui:      "DM Sans", sans-serif;
+  --font-family-mono:    "JetBrains Mono", monospace;
+}
+
+@layer utilities {
+  /* Hide scrollbar for clean UI */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes slideUp      { from { opacity:0; transform:translateY(14px) } to { opacity:1; transform:translateY(0) } }
+@keyframes fadeIn       { from { opacity:0 } to { opacity:1 } }
+@keyframes ringPulse    { 0%,100% { opacity:.7; transform:scale(1) } 50% { opacity:.2; transform:scale(1.15) } }
+@keyframes blink        { 0%,100% { opacity:1 } 50% { opacity:0 } }
+@keyframes spin         { to { transform:rotate(360deg) } }
+@keyframes liveDot      { 0%,100% { opacity:1; transform:scale(1) } 50% { opacity:.4; transform:scale(.8) } }
+@keyframes skeletonPulse{ 0%,100% { opacity:.4 } 50% { opacity:.7 } }
+@keyframes glowPulse    { 0%,100% { opacity:.55 } 50% { opacity:1 } }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+::-webkit-scrollbar { display: none; }
+textarea { outline: none; resize: none; }
+button { cursor: pointer; }
